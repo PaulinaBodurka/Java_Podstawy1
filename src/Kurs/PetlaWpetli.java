@@ -1,0 +1,27 @@
+package Kurs;
+
+public class PetlaWpetli {
+    public static void main(String[] args) {
+        int licznik = 0;
+        int[][] tablica = new int[5][10];
+
+        int i;
+        int j;
+        for(i = 0; i < 5; ++i) {
+            for(j = 0; j < 10; ++j) {
+                ++licznik;
+                tablica[i][j] = licznik;
+            }
+        }
+
+        for(i = 0; i < 5; ++i) {
+            for(j = 0; j < 10; ++j) {
+                System.out.print(tablica[i][j] + " ");
+            }
+
+            System.out.println();
+        }
+
+    }
+}
+
